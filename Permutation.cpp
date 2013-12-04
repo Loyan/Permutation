@@ -28,26 +28,26 @@ class Permutation
         void setIndices (char* newIndices);
 };
 
-        Permutation::Permutation (long newPermutationCode)
+        Permutation::Permutation (long newPermutationCode)// vukonalu Loyan, Deyneka
 {
         PermutationCode=newPermutationCode;      
 }
 
-        Permutation::Permutation (char*newPermutationString)
+        Permutation::Permutation (char*newPermutationString)// vukonalu Loyan, Deyneka
 {
          int len=strlen(newPermutationString);
          newPermutationString=new char [len+1];
          strncpy(PermutationString,newPermutationString,len);
          PermutationString[len+1]=0;        
 }
-Permutation::Permutation (char*newIndices,long newN)
+Permutation::Permutation (char*newIndices,long newN)// vukonalu Loyan, Deyneka
 {
           for (int i=1;i<newN;i++)
        { 
           char*indices=newIndices;   
        }     
 }
-Permutation::~Permutation()
+Permutation::~Permutation()// vukonalu Loyan, Deyneka
 {
 
 }
@@ -95,7 +95,9 @@ indices[len]=0;
 }
 int main(int argc, char *argv[])
 {
-Permutation a("abcd",4);
+    
+    Permutation b ("abcd")
+    Permutation a ("", 4);// vukonalu Loyan, Deyneka
 
  system("PAUSE");
   return EXIT_SUCCESS;
