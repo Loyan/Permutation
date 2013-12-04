@@ -51,7 +51,6 @@ Permutation::~Permutation()// vukonalu Loyan, Deyneka
 {
 
 }
-
 long Permutation::getPermutationCode()
 {
      return PermutationCode;
