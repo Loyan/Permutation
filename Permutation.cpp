@@ -95,9 +95,11 @@ indices[len]=0;
 }
 int main(int argc, char *argv[])
 {
-    
-    Permutation b ("abcd")
-    Permutation a ("", 4);// vukonalu Loyan, Deyneka
+    Permutation mas[100];
+    a1=1;
+    a2=2;
+    a3=3;
+    a4=4;
 
  system("PAUSE");
   return EXIT_SUCCESS;
