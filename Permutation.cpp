@@ -9,8 +9,8 @@ class Permutation
         long PermutationCode;
     public:
         Permutation();
-        Permutation ( long new Permutation Code);
-        Permutation (char*Permutation string);
+        Permutation ( long newPermutationCode);
+        Permutation (char*PermutationString);
         Permutation ( char* indices, long n);
         ~Permutation();
 
