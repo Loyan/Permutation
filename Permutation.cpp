@@ -95,7 +95,7 @@ indices[len]=0;
 }
 int main(int argc, char *argv[])
 {
-    Permutation mas[100];
+    Permutation mas[100];// vukonalu Loyan, Deyneka
     Permutation a1=1;
     Permutation a2=2;
     Permutation a3=3;
