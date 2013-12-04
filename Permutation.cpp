@@ -96,10 +96,10 @@ indices[len]=0;
 int main(int argc, char *argv[])
 {
     Permutation mas[100];
-    a1=1;
-    a2=2;
-    a3=3;
-    a4=4;
+    Permutation a1=1;
+    Permutation a2=2;
+    Permutation a3=3;
+    Permutation a4=4;
 
  system("PAUSE");
   return EXIT_SUCCESS;
