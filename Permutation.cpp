@@ -15,7 +15,7 @@ class Permutation
         Permutation();
         Permutation ( long newPermutationCode);
         Permutation (char*newPermutationString);
-        Permutation ( char*indices, long newN);
+        Permutation ( char*newIndices, long newN);
         ~Permutation();
         void codeToIndices();
        // void indicesToCode():
@@ -27,18 +27,25 @@ class Permutation
         void setIndices (char* newIndices);
 };
 
-        Permutation::Permutation (long newPermutationCode)
-{
+Permutation::Permutation (long newPermutationCode)
+        {
         PermutationCode=newPermutationCode;      
-}
+        }
 
-        Permutation::Permutation (char*newPermutationString)
-{
+Permutation::Permutation (char*newPermutationString)
+        {
          int len=strlen(newPermutationString);
          newPermutationString=new char [len+1];
          strncpy(PermutationString,newPermutationString,len);
          PermutationString[len+1]=0;        
-}
+        }
+ Permutation::Permutation (char*newIndices,long newN)
+    {
+          for (int i=1;i<newN;i++)
+        { 
+           char*indices=newIndices;   
+        }     
+    }
 
 
 long Permutation::getPermutationCode()
