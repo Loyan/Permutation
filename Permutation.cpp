@@ -95,6 +95,7 @@ indices[len]=0;
 }
 int main(int argc, char *argv[])
 {
+Permutation a("abcd",4);
 
  system("PAUSE");
   return EXIT_SUCCESS;
