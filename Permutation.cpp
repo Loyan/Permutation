@@ -23,4 +23,18 @@ class Permutation
         char * getIndices();
         void setIndices (char* newIndices);
 };
+      
+      
+       Permutation::Permutation (long newPermutationCode)
+{
+        PermutationCode=newPermutationCode;      
+}
+
+        Permutation::Permutation (char*newPermutationString)
+{
+         int len=strlen(newPermutationString);
+         newPermutationString=new char [len+1];
+         strncpy(PermutationString,newPermutationString,len);
+         PermutationString[len+1]=0;        
+}
 
