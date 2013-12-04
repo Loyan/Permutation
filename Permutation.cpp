@@ -1,3 +1,7 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
 class Permutation
 {
     protected:
@@ -10,12 +14,11 @@ class Permutation
     public:
         Permutation();
         Permutation ( long newPermutationCode);
-        Permutation (char*PermutationString);
-        Permutation ( char* indices, long n);
+        Permutation (char*newPermutationString);
+        Permutation ( char*indices, long newN);
         ~Permutation();
-
-        Void codeToIndices();
-        void indicesToCode():
+        void codeToIndices();
+       // void indicesToCode():
         void stringToIndices();
         long getPermutationCode();
         void setPermutationCode(long newCode);
@@ -23,9 +26,8 @@ class Permutation
         char * getIndices();
         void setIndices (char* newIndices);
 };
-      
-      
-       Permutation::Permutation (long newPermutationCode)
+
+        Permutation::Permutation (long newPermutationCode)
 {
         PermutationCode=newPermutationCode;      
 }
@@ -38,3 +40,6 @@ class Permutation
          PermutationString[len+1]=0;        
 }
 
+ system("PAUSE");
+  return EXIT_SUCCESS;
+}
